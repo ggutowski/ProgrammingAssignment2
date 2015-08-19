@@ -9,8 +9,9 @@
 ## cacheSolve(sx)                     Compute the inverse of matrix x
 ## cacheSolve(sx)                     Call the inverse again (retrieved from cache)
 
+#############################################################
 ## The makeCacheMatrix function creates a matrix for caching.
-
+#############################################################
 makeCacheMatrix <- function(x = matrix()) {
   #minv will be the cached inverted matrix
   minv <- NULL
@@ -37,11 +38,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
+########################################################################################
 ## The cacheSolve function calculates the inverse of the matrix created in the function 
 ## unless the inverse already exist in the cache, in which case it retrieves the result.
 ## This function assumes the matrix is always invertible.
-
+########################################################################################
 cacheSolve <- function(x, ...) {
   
   #Check if inverse has already been computed and cached.
